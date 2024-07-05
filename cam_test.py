@@ -20,8 +20,8 @@ def analyze_vision():
     try:
         # Returns byte array of photo
         img = get_photo()
-        time = cam.get_time()
-        photo_label = f"{time}_"
+        _time = cam.get_time()
+        photo_label = f"{_time}_"
         
         # Query contents of the image. Uses the following model by default
         # https://api-inference.huggingface.co/models/hustvl/yolos-small
